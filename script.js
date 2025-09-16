@@ -34,22 +34,37 @@
 
 // }
 
-const numm = document.getElementById("vvod");
-const btn = document.getElementById("btn");
-const vyv = document.getElementById("vyvod");
+// const numm = document.getElementById("vvod");
+// const btn = document.getElementById("btn");
+// const vyv = document.getElementById("vyvod");
 
-function fac() {
-    let nummm = Number(numm.value)
-    let rez = 1
-    while (nummm > 0) {
-        rez *= nummm
-        nummm --
+// function fac() {
+//     let nummm = Number(numm.value)
+//     let rez = 1
+//     while (nummm > 0) {
+//         rez *= nummm
+//         nummm --
 
-    }
-    vyv.textContent = rez;
+//     }
+//     vyv.textContent = rez;
 
+// }
+
+// btn.addEventListener("click", fac)
+
+
+
+let a = ["1", 2, 3, 4,5 ,6]
+
+for (let index = 0; index < a.length; index++) {
+    const element = a[index];
+    console.log(element);
+    
+    
 }
 
-btn.addEventListener("click", fac)
-
+a.forEach((element,index) => {
+    console.log(element, index);
+    
+});
 
